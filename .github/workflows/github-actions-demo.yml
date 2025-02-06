@@ -57,8 +57,8 @@ jobs:
     steps:
       - run: |
           echo "🚀 Step 1..."
-          echo "MY_VAR:" $MY_VAR
-          echo "MY_SECRET:" $MY_SECRET
+          echo "MY_VAR: $MY_VAR"
+          echo "MY_SECRET: $MY_SECRET"
           sleep 10
       - run: |
           echo "🚀 Step 2..."
