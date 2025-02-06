@@ -52,8 +52,8 @@ jobs:
       url: https://writeabout.net
     if: github.event.inputs.environment == 'Production'
     env:
-      MY_VAR: ${{security.MY_PROD_VAR}}
-      MY_SECRET: ${{security.MY_PROD_SECRET}}
+      MY_VAR: ${{variables.MY_PROD_VAR}}
+      MY_SECRET: ${{secrets.MY_PROD_SECRET}}
     steps:
       - run: |
           echo "🚀 Step 1..."
